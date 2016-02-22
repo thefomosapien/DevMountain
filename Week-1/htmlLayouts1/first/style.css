@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.main-container {
+    background-color: lightgray;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.top-section {
+    background-color: #444444;
+    width: 100%;
+    height: 158px;
+}
+
+.middle-section {
+    background-color: white;
+    width: 79%;
+    height: 1000px;
+    margin-left: 10%;
+        
+}
+
+.bottom-section {
+    background-color: black;
+    width: 79%;
+    height: 100px;
+    margin-left: 10%;
+}

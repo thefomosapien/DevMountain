@@ -1,0 +1,18 @@
+<html ng-app="apiApp">
+
+<body ng-controller="gravy">
+
+    <input type='text' ng-model='pokename'>
+    <button ng-click='iChooseYou(pokename)'>I Chose You!</button>
+
+    <div>{{poke.name}}</div>
+    <div>{{poke.weight}}</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>

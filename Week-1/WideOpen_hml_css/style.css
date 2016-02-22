@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900italic);
+
+html , body {
+   box-sizing: border-box;
+}
+
+*, *​:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.top-home-main {
+  width: 100%;
+  height: 500px;
+  background: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg"); bottom no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.top-home-main img {
+  min-width: 50px;
+  width: 225px;
+  height: auto;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.nav-wrapper {
+  width: 66%;
+  height: 75px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-left: 33%;
+}
+
+.button-container1 {
+  display: none;
+  width: 22%;
+  height: 50px;
+  right: 10px;
+  top: 10px;
+  text-transform: uppercase;
+}
+
+.button-container2 {
+  display: none;
+  width: 24%;
+  height: 50px;
+  right: 40px;
+  top: 10px;
+  text-transform: uppercase;
+}
+
+.button-container3 {
+  display: none;
+  width: 26%;
+  height: 50px;
+  right: 40px;
+  top: 10px;
+  text-transform: uppercase;
+}
+
+.button-container4 {
+  display: none;
+  width: 22%;
+  height: 50px;
+  right: 10px;
+  top: 10px;
+  text-transform: uppercase;
+}
+
+.button-container5 {
+  display: none;
+  width: 16%;
+  height: 50px;
+  right: 10px;
+  top: 10px;
+  text-transform: uppercase;
+}
+
+.button-container6 {
+  display: none;
+  background: #bdd537;
+  color: white;
+  font-family: Lato;
+  text-align: center;
+  width: 30%;
+  height: 40px;
+  right: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.hamburger {
+  min-width: 50px;
+  width: 50px;
+  margin-left: 80%;
+}
+
+.hamburger img {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button-container7 {
+  background: #bdd537;
+  color: white;
+  font-family: Lato;
+  text-align: center;
+  width: 30%;
+  height: 40px;
+  right: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  display: flex;
+  position: absolute;
+  left: 35%;
+}
+
+.learn-more {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+
+header div a {
+  text-decoration: none;
+  color: white;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+header div a:hover {
+  color: #bdd537;
+}
+
+.over-image-text-container {
+  width: auto;
+  height: auto;
+}
+
+.top-home-main h2 {
+  color: white;
+  font-family: Lato;
+  text-align: center;
+  margin-top: 75px;
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.top-home-main h1 {
+  color: white;
+  font-family: Lato;
+  text-align: center;
+  font-size: 100px;
+  line-height: 0px;
+}
+
+.building-business-solutions {
+  color: white;
+  font-family: Lato;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 20px;
+  line-height: 0px;
+}
+
+@media (min-width: 950px) {
+  .hamburger {
+    display: none;
+  }
+  .button-container1 {
+    display: block;
+  }
+  .button-container2 {
+    display: block;
+  }
+  .button-container3 {
+    display: block;
+  }
+  .button-container4 {
+    display: block;
+  }
+  .button-container5 {
+    display: block;
+  }
+  .button-container6 {
+    display: block;
+}
+  .top-home-main h2 {
+    color: white;
+    font-family: Lato;
+    margin-top: 75px;
+    font-size: 20px;
+    line-height: 0px;
+  }

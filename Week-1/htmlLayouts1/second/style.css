@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.main-container {
+    background: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+
+.blue {
+    background: #4A90E2;
+    width: 33%;
+    height: 700px;
+}
+
+.teal {
+    background: #50E3C2;
+    width:33%;
+    height: 700px;
+}
+
+.green {
+  background: #B8E986;
+  width: 33%;
+  height: 550px;
+}
+
+.red {
+  background-color: red;
+  width: 100%;
+  height: 150px;
+  margin-top: 550px;
+}

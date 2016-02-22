@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Listo</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <!--space for user to input their list items-->
+    <form id="newTaskForm">
+        <label>New Item</label>
+        <input id="newItemInput" placeholder="new task">
+        <button id="saveNewItem">Save</button>
+        <button id="cancel">Cancel</button>
+    </form>
+
+    <!--We added a new ID here called newListItem. We will need to attach that to a button in the index.html file so that we can toggle the form.-->
+    <div class='new-item-header'>
+        <button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+    </div>
+
+    <!--create a div underneath all of that with the id of newList so that our addTask function can append the new items into the DOM.-->
+    <div id="newList">
+        New List
+    </div>
+
+    <!--Create divs with ULs within them that contain the IDs our jQuery will look for. Or in other words, let's make some hooks for our jQuery to find and manipulate!-->
+    <div class="panel">
+        In Progress
+        <ul class="list-group" id="currentList"></ul>
+    </div>
+    <div class="panel">
+        Archived
+        <ul class="list-group" id="archivedList"></ul>
+    </div>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+</body>
+
+</html>

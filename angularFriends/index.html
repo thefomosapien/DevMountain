@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>Angular Friends</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-controller="FriendController">
+
+    <h1>The <strong>facebook</strong> Friend Machine</h1>
+
+    <div class="friends">
+        <form class="form-inline searchForm" role="form">
+            <div class="form-group">
+
+
+                <input class="form-control" placeholder="Search Name" ng-model="searchTerm.name">
+                <input class="form-control" placeholder="Search Location" ng-model="searchTerm.current_location.name">
+
+                <!-- STEP 5: Get rid of the one above when you uncomment the below-->
+                <!--
+        <input class="form-control" placeholder="Search Name">
+        <input class="form-control" placeholder="Search Location">
+          -->
+
+                <select ng-model="searchAttribute" class="input-medium">
+                    <option>Name</option>
+                    <option>#Friends</option>
+                    <option>City</option>
+                    <option>State</option>
+                    <option>Country</option>
+                </select>
+
+                <select class="input-medium">
+                    <option value="+">Descending</option>
+                    <option value="-">Ascending</option>
+                </select>
+
+            </div>
+        </form>
+
+        <ul ng-repeat="friend in friends">
+            <li class='friend'>
+
+                <img class="profile-pic" src='{{friend.pic_square}}'>
+
+                <h3>{{friend.name}}</h3>
+
+                <div class="location">
+                    {{friend.current_location.city}}, {{friend.current_location.state}}, {{friend.current_location.country}}, {{friend.current_location.zip}}
+                </div>
+
+                <div class="status">
+
+                </div>
+
+                <div class="num-friends">
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="FriendController.js"></script>
+</body>
+
+</html>

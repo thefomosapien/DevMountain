@@ -1,0 +1,21 @@
+<html ng-app="app3">
+
+<body ng-controller="ctrl">
+
+    <div> Filter Name:
+        <input type="text" ng-model="search.name" /> </div>
+
+    <div> Filter Email:
+        <input type="text" ng-model="search.email" /> </div>
+
+    <div ng-repeat="person in data | filter:search">
+        <strong>{{person.name}}</strong> - {{person.email}}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>

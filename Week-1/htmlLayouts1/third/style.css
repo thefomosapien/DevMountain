@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.main-container {
+  width: 100%;
+  background: white;
+
+}
+
+.header-container {
+  width: 100%;
+  height: 200px;
+  background: #B8C1C8;
+}
+
+.middle-text-container {
+  width: 100%;
+  height: 400px;
+  background: white;
+  text-align: center;
+}
+
+.bottom-container-1 {
+  width: 100%;
+  height: 200px;
+  background: blue;
+}
+
+.bottom-container-2 {
+  width: 100%;
+  height: 200px;
+  background: teal;
+}
+
+.bottom-container-3 {
+  width: 100%;
+  height: 200px;
+  background: green;
+}
+
+.bottom-container-4 {
+  width: 100%;
+  height: 200px;
+  background: yellow;
+}
