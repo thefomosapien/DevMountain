@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html ng-app="quizApp">
+
+<head>
+
+    <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="public/css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div id="navbar"><a ui-sref="home">HOME</a></div>
+        </div>
+
+    </header>
+
+    <div ui-view></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="components/home/homeCtrl.js"></script>
+    <script src="components/quiz/quizCtrl.js"></script>
+    <script src="components/results/resultsCtrl.js"></script>
+
+
+</body>
+
+</html>
