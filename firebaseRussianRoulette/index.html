@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app='russianRoulette'>
+  <head></head>
+
+  <body>
+    <div ng-controller='mainCtrl'>
+      <button ng-click='createNewGame()'>New Game</button>
+      <button ng-click='pullTrigger()'>Pull Trigger</button>
+      Your Name: <input type='text' ng-model='name'>
+      <p>Number of times trigger pulled: {{game.currentChamber}}</p>
+      <p ng-if='game.deadPerson'>{{game.deadPerson}} died!</p>
+    </div>
+    <div ng-controller='chatCtrl'>
+      <form ng-submit='sendNewChat()'>
+        <input type='text' ng-model='newChat'>
+        <input type='submit' value='Send'>
+      </form>
+      <ul>
+        <li ng-repeat='chat in chats'><button ng-click='removeChat(chat)'>X</button>{{chat.text}}</button></li>
+      </ul>
+    </div>
+    <div ng-controller='collabCtrl'>
+      <textarea ng-model='text.$value'></textarea>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js'></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

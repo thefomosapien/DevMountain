@@ -1,0 +1,16 @@
+{
+  "agenda": [
+    "web app landscape",
+    "What is Firebase?",
+    "Firebase vs. AngularFire",
+    "$firebaseArray",
+    "$firebaseObject",
+    "three way binding",
+  ],
+  "me": {
+    "name": "Jacob Turner",
+    "company": "Spero",
+    "linkedin": "https://www.linkedin.com/in/jisraelturner",
+    "twitter": "@jisraelturner",
+  }
+}

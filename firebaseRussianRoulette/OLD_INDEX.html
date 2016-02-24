@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body ng-app='todoList'>
+  <div ng-controller='infoCtrl'>
+    This site has been visited {{info.visits}} times!
+  </div>
+  <div ng-controller='listCtrl'>
+    <form ng-submit='addNewItem()'>
+      <input ng-model='newItem' type='text'>
+      <input type='submit'>Create</input>
+    </form>
+    <ul>
+      <li ng-repeat='item in list track by $index'><button ng-click='removeItem($index)'>X</button>{{item.$value}}</li>
+    </ul>
+  </div>
+  <div ng-controller='realtimeCtrl'>
+    <textarea ng-model='realtimeText.$value'></textarea>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js'></script>
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
