@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html ng-app="pizzaGenerator">
+
+<head>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <!--Materialize mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body ng-controller="mainCtrl">
+
+    <div class="container">
+
+
+        <div ui-view></div>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <!--Controllers-->
+    <script src="js/Controllers/landingCtrl.js"></script>
+    <script src="js/Controllers/mapCtrl.js"></script>
+    <script src="js/Controllers/pizzaCtrl.js"></script>
+    <script src="js/Controllers/mainCtrl.js"></script>
+
+
+    <!--Services-->
+    <script src="js/Services/landingService.js"></script>
+    <script src="js/Services/mapService.js"></script>
+    <script src="js/Services/pizzaService.js"></script>
+
+    <!--Materialize-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+
+
+</body>
+
+</html>
