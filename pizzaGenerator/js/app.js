@@ -4,7 +4,7 @@ angular.module('pizzaGenerator', ['ui.router'])
 
     $stateProvider
 
-        .state('landing', {
+    .state('landing', {
         url: '/',
         templateUrl: 'Templates/landingTmpl.html',
         controller: 'landingCtrl'
