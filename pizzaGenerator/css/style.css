@@ -1,3 +1,31 @@
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 /*Make complete background color change*/
 
 html.ng-scope {
@@ -11,7 +39,7 @@ html.ng-scope {
 }
 
 img {
-    width: 585px;
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,6 +87,22 @@ img {
     text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.card {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
 .containerDude {
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +110,7 @@ img {
 }
 
 .ng-isolate-scope {
-    width: 400px;
+    width: 275px;
 }
 
 .row {
@@ -75,4 +119,14 @@ img {
 
 .waves-effect {
     position: absolute;
+}
+
+.map {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.map-title {
+    text-align: center;
+    padding: 0;
 }
