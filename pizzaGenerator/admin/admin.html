@@ -1,0 +1,59 @@
+<header class="header-container">
+    <h1 class="title">Add toppings, sauces & crusts</h1>
+</header>
+
+<form>
+
+    <input type="text" ng-model="topping.name" placeholder="name" />
+    <input type="text" ng-model="topping.description" placeholder="description" />
+    <input type="text" ng-model="topping.img" placeholder="image" />
+
+    <button ng-click="addTopping(topping);">Add topping</button>
+
+
+</form>
+
+<ul ng-repeat="topping in toppings">
+
+    <li style="border-bottom: 1px solid black;">
+        <p>{{topping.name}}</p>
+        <p>{{topping.description}}</p>
+        <p>{{topping.img}}</p>
+    </li>
+
+</ul>
+
+<form>
+
+    <input type="text" ng-model="sauce.name" placeholder="name" />
+    <input type="text" ng-model="sauce.description" placeholder="description" />
+    <input type="text" ng-model="sauce.img" placeholder="image" />
+
+
+    <button ng-click="addSauce(sauce);">Add sauce</button>
+
+</form>
+
+<ul ng-repeat="sauce in sauces">
+    <li style="border-bottom: 1px solid black;">
+        <p>{{sauce.name}}</p>
+        <p>{{sauce.description}}</p>
+        <p>{{sauce.img}}</p>
+    </li>
+</ul>
+
+<form>
+    <input type="text" ng-model="crust.name" placeholder="name" />
+    <input type="text" ng-model="crust.description" placeholder="description" />
+    <input type="text" ng-model="crust.img" placeholder="image" />
+
+    <button ng-click="addCrust(crust);">Add crust</button>
+</form>
+
+<ul ng-repeat="crust in crusts">
+    <li style="border-bottom: 1px solid black;">
+        <p>{{crust.name}}</p>
+        <p>{{crust.description}}</p>
+        <p>{{crust.img}}</p>
+    </li>
+</ul>

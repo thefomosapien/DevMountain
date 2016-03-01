@@ -32,6 +32,7 @@ html.ng-scope {
     background-color: #FEF2E4;
 }
 
+
 /*Landing view*/
 
 .title {
@@ -63,6 +64,7 @@ img {
     margin: -15px 0 0 -150px;
 }
 
+
 /*Random pizza view*/
 
 .pizza-ready {
@@ -86,6 +88,7 @@ img {
 .card .card-image .card-title {
     font-size: 40px;
     font-weight: 800;
+    line-height: 1;
     -webkit-text-stroke: 1px black;
     color: white;
     text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -125,6 +128,7 @@ img {
     position: absolute;
 }
 
+
 /*Map view*/
 
 .map {
@@ -134,5 +138,6 @@ img {
 
 .map-title {
     text-align: center;
-    
 }
+
+
