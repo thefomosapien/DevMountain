@@ -1,0 +1,44 @@
+angular.module('pizzaGenerator', ['ui.router', 'firebase'])
+
+.config(function ($stateProvider, $urlRouterProvider) {
+
+    $stateProvider
+        .state('landing', {
+            url: '/',
+            templateUrl: 'landing/landingTmpl.html'
+        })
+        .state('pizza', {
+            url: '/pizza',
+            templateUrl: 'generator/pizzaTmpl.html'
+                //            controller: 'pizzaCtrl',
+                //            resolve: {
+                //                generatedPizza: function (pizzaService) {
+                //                    return pizzaService.getRandomPizza();
+                //                }
+                //            }
+
+        })
+        .state('map', {
+            url: '/map',
+            templateUrl: 'map/mapTmpl.html',
+            controller: 'mapCtrl'
+        })
+        .state('admin', {
+            url: '/admin',
+            templateUrl: './admin/admin.html',
+            controller: 'adminCtrl',
+            resolve: {
+                toppingRef: function (adminService) {
+                        return adminService.createTopping();
+                    }
+                    //                sauce: function (adminService) {
+                    //                    return adminService.createSauce();
+                    //                },
+                    //                crust: function (adminService) {
+                    //                    return adminService.createCrust();
+                    //                }
+            }
+        })
+
+    $urlRouterProvider.otherwise('/');
+})
