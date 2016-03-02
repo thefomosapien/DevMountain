@@ -1,6 +1,0 @@
-pizzaModule.service('mapService', function () {
-
-
-
-
-});

@@ -136,11 +136,57 @@ img {
 
 /*Map view*/
 
-.map {
+.map-small {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.map-medium {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.map-large {
     padding-top: 25px;
     text-align: center;
 }
 
 .map-title {
     text-align: center;
+}
+
+@media (min-width: 0px) {
+    .map-small {
+        display: block;
+    }
+    .map-medium {
+        display: none;
+    }
+    .map-large {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .map-small {
+        display: none;
+    }
+    .map-medium {
+        display: block;
+    }
+    .map-large {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .map-small {
+        display: none;
+    }
+    .map-medium {
+        display: none;
+    }
+    .map-large {
+        display: block;
+    }
 }
