@@ -5,6 +5,7 @@ pizzaModule.controller('pizzaCtrl', function ($scope, pizzaService, $firebaseArr
         var num = (Math.floor(Math.random() * arr.length));
 
         return arr[num];
+
     }
 
     var toppingRef = pizzaService.getToppings();
@@ -35,6 +36,6 @@ pizzaModule.controller('pizzaCtrl', function ($scope, pizzaService, $firebaseArr
             location.reload();
         });
     };
-    
+
     createPizza();
 });

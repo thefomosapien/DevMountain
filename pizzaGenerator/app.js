@@ -12,6 +12,11 @@ var pizzaModule = angular.module('pizzaGenerator', ['ui.router', 'firebase'])
         url: '/pizza',
         templateUrl: 'generator/pizzaTmpl.html',
         controller: 'pizzaCtrl'
+            //        resolve: [
+            //            randomFunction: function(pizzaCtrl) {
+            //            return 
+            //                //            }
+            //            ]
     })
 
     .state('map', {
