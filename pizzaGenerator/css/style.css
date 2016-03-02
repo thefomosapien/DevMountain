@@ -85,6 +85,11 @@ img {
     padding-bottom: 30px;
 }
 
+.order-now {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 .card .card-image .card-title {
     font-size: 40px;
     font-weight: 800;
@@ -117,7 +122,7 @@ img {
 }
 
 .ng-isolate-scope {
-    width: 275px;
+    width: 400px;
 }
 
 .row {
@@ -139,5 +144,3 @@ img {
 .map-title {
     text-align: center;
 }
-
-

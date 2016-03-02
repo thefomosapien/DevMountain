@@ -29,5 +29,12 @@ pizzaModule.controller('pizzaCtrl', function ($scope, pizzaService, $firebaseArr
         })
     }
 
+    //When try again button is clicked, reload page.
+    $scope.refreshPage = function () {
+        $(document).click(function () {
+            location.reload();
+        });
+    };
+    
     createPizza();
 });
