@@ -1,0 +1,211 @@
+.bolded {
+    font-weight: 700
+}
+
+html {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: Raleway, sans-serif
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-family: Raleway, sans-serif
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: .1em;
+    height: 40px;
+    padding: 10px
+}
+
+input {
+    width: 240px;
+    height: 25px;
+    border: 1px solid #06bbff;
+    margin-bottom: 10px;
+    font-family: Raleway, sans-serif;
+    padding-left: 2%
+}
+
+input[type=text]::-webkit-input-placeholder {
+    font-family: Raleway, sans-serif
+}
+
+input[type=password]::-webkit-input-placeholder {
+    font-family: Raleway, sans-serif
+}
+
+a {
+    width: 80px;
+    height: 30px;
+    border: 0;
+    background-color: #06bbff;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-decoration: none
+}
+
+a:hover {
+    color: #000
+}
+
+.wrapper {
+    max-width: 650px;
+    margin: 200px auto
+}
+
+.wrapper img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 0;
+    border: 2px solid #060606
+}
+
+.wrapper .login {
+    width: 280px;
+    height: 160px;
+    float: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    background-color: #060606;
+    border: 2px solid #060606
+}
+
+.wrapper .login button {
+    background-color: #06bbff;
+    width: 80px;
+    height: 30px;
+    border: 0;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    letter-spacing: .1em
+}
+
+.wrapper .login button a {
+    padding: 5px 15px;
+    text-decoration: none
+}
+
+.wrapper .login button a:hover {
+    color: #000
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 2% 0 0 10%;
+    color: #fff;
+    font-size: 2em;
+    background-color: #060606;
+    border-bottom: 5px solid #06bbff
+}
+
+.logo img {
+    z-index: 10;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 3.5%;
+    left: 4%
+}
+
+.container {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    position: relative;
+    height: 600px
+}
+
+.profile {
+    flex: 1;
+    background-color: #060606;
+    border-right: 5px solid #06bbff;
+    background-image: url(../images/grey_squares2.png);
+    background-repeat: repeat;
+    color: #fff
+}
+
+.profile img {
+    border-radius: 100%;
+    float: left;
+    margin: 0;
+    padding: 1% 5%;
+    width: 80px;
+    height: auto
+}
+
+.profile ul {
+    width: 80%;
+    margin: 0 5% 0 3%;
+    padding-top: 3%
+}
+
+.profile ul li {
+    margin: 0 15%;
+    padding-bottom: 2%;
+    list-style: none
+}
+
+.friends {
+    flex: 3
+}
+
+.friends img {
+    border-radius: 100%;
+    float: left;
+    margin: 0;
+    padding: 1% 5%;
+    width: 80px;
+    height: auto
+}
+
+.friends ul {
+    clear: both;
+    width: 80%;
+    margin: 0 5% 0 3%;
+    padding-top: 3%
+}
+
+.friends ul li {
+    margin: 0 15%;
+    padding-bottom: 2%;
+    list-style: none
+}
+
+.friends ul hr {
+    border: 0;
+    height: 1px;
+    background: #06bbff;
+    background-image: linear-gradient(to right, #fff, #06bbff, #fff)
+}

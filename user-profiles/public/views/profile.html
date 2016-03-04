@@ -1,0 +1,36 @@
+<div>
+
+  <div class="header">
+    The Most Amazing Social Media Site Ever
+  </div>
+  
+  <div class="logo">
+    <a ui-sref="home">
+      <img src="../images/logo2.png" alt="logo" /> 
+    </a>   
+  </div>
+  
+  <div class="container">    
+    <div class="profile"> 
+      <ul>
+        <li class="bolded">{{ currentUser.name }}</li>
+      </ul>
+    </div>  
+
+
+    <div class="friends">
+      <ul ng-repeat="friend in friends">
+        <img ng-src="{{ friend.pic }}">
+        <li class="bolded">{{ friend.name }}</li>
+        <li>{{ friend.status }}</li>
+        <hr>
+      </ul>   
+    </div>
+  </div>
+  
+  <!--
+  <div class="credit">
+    <p>Animal graphic by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a></p>
+  </div>  
+  -->
+</div>
