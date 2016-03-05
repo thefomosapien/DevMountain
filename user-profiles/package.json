@@ -1,0 +1,18 @@
+{
+  "name": "user-profiles",
+  "version": "1.0.0",
+  "description": "Today we will be creating a user profiles page that tracks the current user on the back-end and displays information specific to that user. This app will serve\r all of our front end files, preventing the need for `live-server` or `http-server`. By the end of the project you will be comfortable using express sessions,\r hiding application secrets, and how to serve static files from the back-end.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0"
+  }
+}
