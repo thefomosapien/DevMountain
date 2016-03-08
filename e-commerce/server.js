@@ -14,8 +14,8 @@ app.listen(port, function() {
     console.log('Now listening on port: ' + port);
 });
 
-app.post('api/products', function(req, res) {
-    res.send('');
+app.post('/products', function(req, res) {
+    return res.status(200).send(req.body);
 });
 
 app.get('/products', function(req, res) {
