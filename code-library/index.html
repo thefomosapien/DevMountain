@@ -1,58 +1,63 @@
-<!DOCTYPE html>
-<html ng-app='codeLibrary'>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code Library</title>
+<!DOCTYPE HTML>
+<html ng-app="code-library">
 
-    <link rel="stylesheet" type="text/css "href="css/style.css" media="screen" title="no title" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.0.8/gridlex.css">
+<head>
 
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  </head>
-  <body>
-    <header class="header">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-      <section class="logo"><i class="fa fa-code code-icon fa-5x"></i></section>
+    <!--Materialize mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <section>
-        <input class="search" type="text" name="search" value="">
-      </section>
+</head>
+
+<body ng-controller="homeCtrl">
 
 
-
-    </header>
-
-    <main class="main-container">
-      <section class="left-menu-section"></section>
-      <section ui-view>
-
-        <div class="test">
-          {{test}}
-        </div>
-
-      </section>
-
-          <!-- <footer-directive></footer-directive> -->
-
-
-    </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js'>
-      </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
-</script>
-    <script src='js/app.js'></script>
-    <script src='controllers/mainCtrl.js'></script>
-    <!-- <script src='js/footerDirective.js'></script> -->
+    <ul id="slide-out" class="side-nav fixed">
+        <i class="material-icons">code</i>
+        <ul class="collapsible" data-collapsible="accordion">
+                <div class="collapsible-header"><li><a href="#!" class="waves-effect waves-teal btn-flat"></i>Learn</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+        </ul>
+        <li><a href="#!" class="waves-effect waves-teal btn-flat">About</a></li>
+        <li><a href="#!" class="waves-effect waves-teal btn-flat">More</a></li>
 
 
 
+        <ui-view></ui-view>
 
-  </body>
+
+        <!--Angular-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+        <!--Materialize-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+        <script src="app.js"></script>
+        <script src="home/homeCtrl.js"></script>
+
+        <!--Controllers-->
+
+        <!--Directives-->
+
+        <!--Services-->
+
+
+
+
+</body>
+
 </html>

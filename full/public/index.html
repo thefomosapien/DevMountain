@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="menu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body ng-controller="mainCtrl">
+
+
+    <ul>
+        <li ng-repeat="food in foods">{{food.name}}</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="./app.js"></script>
+    <script src="./mainCtrl.js"></script>
+</body>
+
+</html>
