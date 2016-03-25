@@ -45,7 +45,11 @@ console.log(call('435-215-9248'));
 
 /*
   Write a function called makeCounter that makes the following code work properly.
-*/  //Code Here
+*/
+
+function makeCounter() {
+    
+}
   
   
 //Uncomment this once you make your function
