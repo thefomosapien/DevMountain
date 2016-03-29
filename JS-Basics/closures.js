@@ -74,7 +74,7 @@ var makeCounter = function() {
 // The second function is called dec, this function is responsible for decrementing the value by one
 // You will need to use the module pattern to achieve this.
 
-function counterFactory(value) {
+function counterFactory() {
   return {}
 
     // Code inc function
