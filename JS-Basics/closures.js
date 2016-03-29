@@ -47,17 +47,21 @@ console.log(call('435-215-9248'));
   Write a function called makeCounter that makes the following code work properly.
 */
 
-function makeCounter() {
-    
-}
+var makeCounter = function() {
+  var num = 0;
+  return function (){
+    num++;
+    return num;
+  };
+};
   
-  
+
 //Uncomment this once you make your function
-//   var count = makeCounter();
-//   count(); // 1
-//   count(); // 2
-//   count(); // 3
-//   count(); // 4
+  var count = makeCounter();
+  console.log(count()); // 1
+  console.log(count()); // 2
+  console.log(count()); // 3
+  console.log(count()); // 4
 
 
 
