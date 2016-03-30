@@ -1,10 +1,10 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
-var outer = function(){
-  var name = 'Tyler';
-  return function(){
-    return 'The original name was ' + name;
-  }
+var outer = function() {
+    var name = 'Tyler';
+    return function() {
+        return 'The original name was ' + name;
+    }
 };
 
 
@@ -22,12 +22,12 @@ inner();
 //Next problem
 
 
-var callFriend = function(){
-  var friend = 'Jake';
-  function callF(number){
-    return 'Calling ' + friend + ' at ' + number;
-  }
-  return callF;
+var callFriend = function() {
+    var friend = 'Jake';
+    function callF(number) {
+        return 'Calling ' + friend + ' at ' + number;
+    }
+    return callF;
 };
 
 
@@ -48,20 +48,20 @@ console.log(call('435-215-9248'));
 */
 
 var makeCounter = function() {
-  var num = 0;
-  return function (){
-    num++;
-    return num;
-  };
+    var num = 0;
+    return function() {
+        num++;
+        return num;
+    };
 };
-  
+
 
 //Uncomment this once you make your function
-  var count = makeCounter();
-  console.log(count()); // 1
-  console.log(count()); // 2
-  console.log(count()); // 3
-  console.log(count()); // 4
+var count = makeCounter();
+console.log(count()); // 1
+console.log(count()); // 2
+console.log(count()); // 3
+console.log(count()); // 4
 
 
 
@@ -74,11 +74,18 @@ var makeCounter = function() {
 // The second function is called dec, this function is responsible for decrementing the value by one
 // You will need to use the module pattern to achieve this.
 
-function counterFactory() {
-  return {}
-
-    // Code inc function
-    // Code dec function
+function counterFactory(startingNum) {
+    var value = startingNum;
+    return {
+        inc: function() {
+            value++;
+            console.log(value);
+        },
+        dec: function() {
+            value--;
+            console.log(value);
+        }
+    };
 
 }
 
@@ -93,7 +100,7 @@ counter = counterFactory(10);
 
 // Inside the motivation function create another function called message that will return welcomeText + firstname + lastname
 
-  function motivation(firstname, lastname){
+function motivation(firstname, lastname) {
 
     var welcomeText = 'Your doing awesome keep it up    ';
 
@@ -102,9 +109,9 @@ counter = counterFactory(10);
 
     //Uncommment this to return the value of your invoked message function
     // return message()
-  }
+}
 
-  motivation('Billy', 'Bob'); // 'Your doing awesome keep it up Billy Bob
+motivation('Billy', 'Bob'); // 'Your doing awesome keep it up Billy Bob
 
 
 
@@ -112,24 +119,24 @@ counter = counterFactory(10);
 // Inside the return create a publicMethod property that is a function that invokes privateMethod. After you create the privateMethod
 // Invoke it by calling module.publicMethod(); outside the module scope
 
-  var module = (function() {
+var module = (function() {
     var person = {
-      name: "phillip",
-      age: 29,
-      location: 'Utah'
+        name: "phillip",
+        age: 29,
+        location: 'Utah'
     };
 
-    var privateMethod = function(){
-      return welcomeText + firstname + '  ' + lastname;
+    var privateMethod = function() {
+        return welcomeText + firstname + '  ' + lastname;
     };
 
     // Anything that is being returned is made public and can be invoked from outside our lexical scope
 
     return {
-      // Code here
+        // Code here
     };
 
-  })();
+})();
 
 //Uncomment this after you create your public method
 //   module.publicMethod();
@@ -141,11 +148,11 @@ counter = counterFactory(10);
 // So that it logs ( 1 then 2 then 3, etc). Run this code in your console to see what the output is.
 
 
-  for (var i = 0; i <= 5; i++) {
+for (var i = 0; i <= 5; i++) {
     setTimeout(function() {
-      console.log(i)
+        console.log(i)
     }, i * 1000)
-  }
+}
 
 
   // To make this code work you will need to create a new scope for every iteration.
