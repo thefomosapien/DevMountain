@@ -74,23 +74,24 @@ console.log(count()); // 4
 // The second function is called dec, this function is responsible for decrementing the value by one
 // You will need to use the module pattern to achieve this.
 
-function counterFactory(startingNum) {
-    var value = startingNum;
+function counterFactory() {
     return {
-        inc: function() {
-            value++;
-            console.log(value);
+        inc: function(value) {
+           value++;
+           return value;
         },
-        dec: function() {
-            value--;
-            console.log(value);
+        dec: function(value) {
+           value--;
+           return value;
         }
     };
 
 }
 
 
-counter = counterFactory(10);
+counter = counterFactory();
+
+counter.dec(10);
 
 
 
