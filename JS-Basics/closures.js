@@ -103,9 +103,11 @@ counter.dec(10);
 
 function motivation(firstname, lastname) {
 
-    var welcomeText = 'Your doing awesome keep it up    ';
+    var welcomeText = 'Your doing awesome keep it up';
 
-    // code message function here
+    var message = function() {
+        return welcomeText + firstname + lastname;
+    }
 
 
     //Uncommment this to return the value of your invoked message function
