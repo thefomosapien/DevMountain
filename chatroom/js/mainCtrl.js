@@ -20,3 +20,6 @@ app.controller('mainCtrl', function($scope, parseService){
   //   $scope.getParseData();
   // }, 1500)
 })
+
+
+
