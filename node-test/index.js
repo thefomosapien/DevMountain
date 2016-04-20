@@ -16,6 +16,11 @@ app.post('/users', function(req, res, next) {
     res.status(200).json(users)
 });
 
+app.delete('/users', function(req, res, next) {
+    users.pop();
+    res.status(200).json(users);
+});
+
 app.listen(3000, function () {
     console.log('listening on port 3000');
 });
