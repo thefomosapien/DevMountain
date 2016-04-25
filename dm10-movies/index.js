@@ -6,11 +6,16 @@ var moviesController = require('./controllers/movies_controller');
 var moviesPolicies = require('./policies/movies_policies');
 
 var logger = require('./middleware/logger');
+var idParser = require('./middleware/id_parser');
 
 var app = express();
 
+app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(logger);
+app.use(idParser);
+
+app.get('/');
 
 app.get('/movies', moviesController.index);
 app.get('/movies/:id', moviesController.show);
