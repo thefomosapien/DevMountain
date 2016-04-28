@@ -7,8 +7,6 @@ var app = express();
 var port = 3000;
 var db = mongojs("eCommerce");
 
-
-
 app.use(cors());
 app.use(bodyParser.json());
 
