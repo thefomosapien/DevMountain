@@ -26,6 +26,8 @@ app.put('/products/:id', function(req, res) {
     
 });
 
+
+
 app.delete('/products/:id', function(req, res) {
     
 });
