@@ -1,0 +1,30 @@
+<h1>Welcome to the Store!</h1>
+<br><br>
+
+<div id="main">
+    <div class="f1">
+        <strong>Products</strong>:<br><br>
+        <div class="products" ng-class="{selected: product === selected}" ng-repeat="product in products" ng-click="select(product)">
+            {{product.name}} : ${{product.price}}  <button ng-click="addToCart(product)">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="f1">
+        <strong>Cart</strong>:{{getTotal()}}<br><br>
+        <div ng-repeat="item in user.cart.products">
+            {{item.product.name}} : ${{item.product.price}}, qty: {{item.qty}} <button ng-click="removeFromCart(item.product)">Remove</button>
+        </div>
+    </div>
+</div>
+
+<div id="bottom">
+        <div>
+            <input type="text" ng-model="newProduct.name" placeholder="name"><input type="number" ng-model="newProduct.price" placeholder="$"><br>
+            <button ng-click="addProduct(newProduct)">Add Product</button>
+        </div>
+    <br>
+        <div>
+            <input type="text" ng-model="selected.name" placeholder="name"><input type="number" ng-model="selected.price" placeholder="$"><br>
+            <button ng-click="updateProduct(selected)">Update</button> <button ng-click="deleteProduct(selected)">Delete</button>
+        </div>
+</div>

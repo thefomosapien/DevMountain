@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#loginMain {
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+.f1 {
+    flex: 1;
+    margin-left: 10%;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+
+#bottom > div {
+    text-align: center;
+    margin: 0 20%;
+}
+
+.products:hover {
+    cursor: pointer;
+}
+
+.selected {
+    color: green;
+}
